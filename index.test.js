@@ -21,11 +21,19 @@ describe('String Calculator TDD', ()=>{
 
     })
     test('Input: "1\n-2,-3" ', ()=>{
-        expect(calc.add("1\n-2,-3")).toBe("negatives not allowed - 1\n-2,-3")
+        expect(calc.add("1\n-2,-3")).toBe("negatives not allowed - -2,-3")
 
     })
     test('Input: "2,1001,4" ', ()=>{
         expect(calc.add("2,1001,4")).toBe(6)
+
+    })
+    test('Input: "//[***]\n1***2***3" ', ()=>{
+        expect(calc.add("//[***]\n1***2***3")).toBe(6)
+
+    })
+    test('Input: //[*][%]\n1*2%3 ', ()=>{
+        expect(calc.add("//[*][%]\n1*2%3")).toBe(6)
 
     })
 })
