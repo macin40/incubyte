@@ -1,0 +1,15 @@
+{
+  "name": "incubyte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "abhishek mani",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.3"
+  }
+}
